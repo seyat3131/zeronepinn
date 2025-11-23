@@ -1,0 +1,6 @@
+# Node modülleri
+node_modules/
+
+# GİZLİ ANAHTARLAR
+.env
+config.env
