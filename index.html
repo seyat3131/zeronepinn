@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERON.EPIN - Çekilişler</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">ZERON.EPIN</div>
+        <div class="user-area" id="user-area">
+            </div>
+    </header>
+
+    <main>
+        <div id="admin-panel" class="admin-panel" style="display:none;">
+            <h2>🔐 YÖNETİCİ KONTROL PANELİ</h2>
+            <div id="admin-info" class="admin-info"></div>
+            <button id="add-cekilis-btn">➕ Yeni Çekiliş Ekle</button>
+            <div id="biten-cekilisler-area" class="biten-cekilisler-area">
+                </div>
+        </div>
+        
+        <div id="cekilis-listesi" class="cekilis-listesi">
+            <h2>✨ Aktif Çekilişler</h2>
+            </div>
+    </main>
+
+    <div id="add-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Yeni Çekiliş Oluştur</h3>
+            <form id="add-cekilis-form">
+                <input type="text" id="cekilis-name" placeholder="Ürün Adı (PUBG UC vb.)" required>
+                <input type="url" id="cekilis-image-url" placeholder="Görsel URL (123.com/gorsel.jpg)" required>
+                <textarea id="cekilis-description" placeholder="Çekiliş Açıklaması" required></textarea>
+                <input type="datetime-local" id="cekilis-bitis-tarihi" required>
+                <button type="submit">Çekilişi Yayınla</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="kazanan-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Kazananı Seç ve İlan Et</h3>
+            <p id="kazanan-modal-text"></p>
+            <button id="kazanan-sec-btn">🎰 Rastgele Kazananı Seç</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
